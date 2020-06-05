@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.loading-screen {
+  /* position: fixed;
+  top: 0;
+  left: 0; */
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.logo {
+  width: 48px;
+  height: 48px;
+}
+
+.loading-bar {
+  width: 130px;
+  height: 2px;
+  background: #cfcfcf;
+  margin-top: 22px;
+  position: relative;
+  overflow: hidden;
+}
+
+.loading-bar::before {
+  content: "";
+  width: 68px;
+  height: 2px;
+  background: #0073b1;
+  position: absolute;
+  left: -34px;
+  animation: blueBar 1.5s infinite;
+}
+
+@keyframes blueBar {
+  50% {
+    left: 96px;
+  }
+}
